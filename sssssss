@@ -1,0 +1,510 @@
+[33mcommit 17c9b0eb5583dbfa0ff570fcaafec700c6262644[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Fri Jun 1 10:46:40 2018 -0400
+
+    Use fullwidth digits
+
+[33mcommit a75250f13351f48a8e8d182ef1dcbb8d759e496c[m
+Author: Eldred Habert <eldredhabert0@gmail.com>
+Date:   Fri Jun 1 16:27:07 2018 +0200
+
+    Delete old serial.asm file
+    
+    This has been since renamed to serial_constants.asm, but somehow the original stayed as well
+
+[33mcommit 64e48babd8717a5da4886e8ee337747f326ad8da[m
+Author: obskyr <powpowd@gmail.com>
+Date:   Fri Jun 1 15:32:04 2018 +0200
+
+    Fix corrected ROM's checksum
+
+[33mcommit 7424ae9256f9434b9e3bf0d8fa410703b2d7f22d[m
+Author: obskyr <powpowd@gmail.com>
+Date:   Fri Jun 1 15:16:12 2018 +0200
+
+    Build additional ROMs with corrected header
+
+[33mcommit 4008993044f5366b216f693343b84117ebea913a[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Fri Jun 1 12:04:44 2018 +0200
+
+    gfx/annon_pics: annotate ROM addresses
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 26646f96eafb177b81c2d80311e5d21508eef008[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Fri Jun 1 01:08:22 2018 -0400
+
+    Some landmark name routines
+
+[33mcommit 1f764d96c4ee5f09ac784d506f1b53e315dccdf5[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Fri Jun 1 00:30:48 2018 -0400
+
+    Declare landmark names (pointer table structure unknown)
+
+[33mcommit fa086f2dca4b1326551cd427d525d9d2a506b3b8[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Fri Jun 1 00:05:35 2018 -0400
+
+    The dark mon palettes consistently appear to be the shiny ones
+
+[33mcommit 3f86bca093910dea3ee0e92e6b533b1b580e2685[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 23:53:32 2018 -0400
+
+    Alternate bank colors green and red in coverage.png
+
+[33mcommit 4bc7905c7656fa1cf526291efc12cd3caf631060[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 23:29:06 2018 -0400
+
+    Fix build (sorry); forgot to use leftover pokered constants
+
+[33mcommit ef11ebd19c8795128b40f872049e87b9b21aadbc[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 22:57:00 2018 -0400
+
+    Fix item constants to correspond with the names table
+
+[33mcommit b15511b87a33187d44470ca3b0ee84a94cbf1c94[m
+Author: Pokeglitch <pokeglitchx@gmail.com>
+Date:   Thu May 31 22:52:46 2018 -0400
+
+    Cleaned up code. Found the unknown_string_funcs in pokered, they deal with Items. Re-ordered to the Item TM/HM Constants for functions to make sense
+
+[33mcommit 9fb2292f5508522e09978e49b1daf04ebfbe0c25[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 22:01:48 2018 -0400
+
+    Define sprite constants
+
+[33mcommit a522a56436cd8df435019cafc7a5a78f698ff08f[m
+Author: Pokeglitch <pokeglitchx@gmail.com>
+Date:   Thu May 31 21:27:02 2018 -0400
+
+    Disassembled some copy functions and some unknown string functions
+
+[33mcommit ebe6e6344981539e42694cdd5899b303389c0fb6[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Fri Jun 1 01:59:53 2018 +0200
+
+    tools/disasm_coverage: fix counting error and remove debug print statement
+    
+    Code wrongly assumed if end - beg + 1 < bpp then y_beg == y_end && x_beg == x_end, but
+    that's obviously not always the case.
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit a7e358cd7e3bb99b3189afe753831656fcc0c354[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 19:47:03 2018 -0400
+
+    Keep pokemon data in data/pokemon
+    Don't print "Here" a lot
+    'make mostlyclean' needs to remove .d files in case a file was renamed
+
+[33mcommit bd9e0d92c0a097c42d7fbb2ab90fdd02e0290088[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Fri Jun 1 01:39:55 2018 +0200
+
+    Makefile: add coverage target and necessary python scripts
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 2804ddca7e50b66ed209815476f74ff98f52f54b[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 19:38:55 2018 -0400
+
+    Disassemble overworld sprites
+
+[33mcommit 66e714913c3ed0bcb1c8d9ee9c004960b711a8ac[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Fri Jun 1 01:26:26 2018 +0200
+
+    home: disassemble vblank and associated functions
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 513028a98e6225e39c53ea64e4f9c483b3abd55b[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 16:47:29 2018 -0400
+
+    PAL_39 is the Pokégear radio
+
+[33mcommit ff0e1a9f35849555658c92e2b55126d1d641c1a9[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 16:37:26 2018 -0400
+
+    Use newer RGB macro; add comments
+
+[33mcommit e02be1af0a1180fcaeac51601486aa6a3017383a[m
+Author: dannye <33dannye@gmail.com>
+Date:   Thu May 31 14:43:05 2018 -0500
+
+    Add palette constants and pokemon palette assignment table
+
+[33mcommit 026d17d42ba271d384f9e5d5ca2287cf0d1bc8b2[m
+Author: dannye <33dannye@gmail.com>
+Date:   Thu May 31 13:43:22 2018 -0500
+
+    Add super palette data
+
+[33mcommit 89dfeeb4ee577c79f2bd6f2cd5d7bdaf24bb0aa2[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 14:00:55 2018 -0400
+
+    Add gfx.py with necessary poketools subset
+
+[33mcommit 0953f537d4e6745a1ead06bba49dd53c50aefc13[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 11:32:30 2018 -0400
+
+    Declare Pokédex type search data; add more comments
+
+[33mcommit de11c8f2f054952456115630c9e88b790a873727[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Thu May 31 10:50:15 2018 -0400
+
+    Declare Pokémon names
+
+[33mcommit 8a1fcb95a5db9c70746ad3171e9c18614e4138c7[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Thu May 31 14:45:54 2018 +0200
+
+    home/pokemon: disassemble Pokémon sprite uncompression routine
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 83bf91908554ae1ec1f6d287679e58987ed3bc0a[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Thu May 31 14:43:59 2018 +0200
+
+    home: disassemble decompression routine
+    
+    Matches pokered
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 401cd741b25c7201888e1c569f1e2b20f3320539[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Thu May 31 13:33:18 2018 +0200
+
+    wram: add PokéDex flags
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit b92ce65c08805029d7dd9398b7d7d16fd63b22dd[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Thu May 31 04:17:44 2018 +0200
+
+    home: disassemble video data copy functions
+    
+    Move to copy2 and rename constants to pokered for consistency
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 77ea015d667d111de27420eb896567deb9a677ea[m
+Author: pfero <ohpee@loves.dicksinhisan.us>
+Date:   Thu May 31 03:49:15 2018 +0200
+
+    party_pointers.asm -> party_pointers.inc
+    
+    In the same vein as evos_attacks_pointers.inc, they depend on being in
+    the same bank, and thus belong in the same section.
+
+[33mcommit 1af43919b11a6029d964a78e7073f362872df5fa[m
+Author: pfero <ohpee@loves.dicksinhisan.us>
+Date:   Thu May 31 03:45:15 2018 +0200
+
+    Disassemble the delay functions and some copy functions
+
+[33mcommit d63e3a21b1e743e19a9ae740497da93de1a378bf[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Wed May 30 21:41:22 2018 -0400
+
+    Define trainer constants; sort party data contiguously
+
+[33mcommit 96049270e07c304e290bf711beb28b52c5d013b0[m
+Author: pfero <ohpee@loves.dicksinhisan.us>
+Date:   Thu May 31 01:18:27 2018 +0200
+
+    Remove scan_includes.c
+
+[33mcommit 88b51cfe5f883a6226752efffcba41da5331b5b9[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Thu May 31 02:59:40 2018 +0200
+
+    gitignore: ignore dependency files
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 096913a754b001ed064d949352766c65a293eb1e[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Thu May 31 02:51:33 2018 +0200
+
+    home: add front pic and decompression disassembly
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 613f81d41e6c829614f7fdbe01d923bdad630587[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Thu May 31 02:49:49 2018 +0200
+
+    wram.asm: correct comment
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit ec810c5a40be3c740da35010cda800af03d2b0e0[m
+Merge: 9ab9ea4 cd9191b
+Author: sanqui <me@sanqui.net>
+Date:   Wed May 30 22:44:58 2018 +0000
+
+    Merge branch 'master' of pfero/pokegold-spaceworld into master
+
+[33mcommit cd9191b074ad1f0cc76375f535a2e487b0451532[m
+Author: pfero <ohpee@loves.dicksinhisan.us>
+Date:   Wed May 30 22:53:12 2018 +0200
+
+    Clean up Makefile
+    
+    This makefile can now figure graphics dependencies on its own, creates
+    dependency files for each compilation unit and compiles everything
+    separately.
+    
+    This is a proposal. Please try it out, read the Makefile to see if you
+    get what I'm trying to do, and propose any improvements you want.
+
+[33mcommit 9ab9ea4ab59cc3c226a7fe15b4fcc92b4af57243[m
+Merge: 0b20a75 d687abc
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Wed May 30 16:35:54 2018 -0400
+
+    Merge branch 'master' of https://git.sanqui.net/pret/pokegold-spaceworld
+
+[33mcommit 0b20a757535ca11c2d57a93675a7f278f78036e1[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Wed May 30 16:35:43 2018 -0400
+
+    Dump item and move names
+
+[33mcommit d687abcb776e5543437ef0686d4ce340136dffbd[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Wed May 30 22:30:57 2018 +0200
+
+    gfx: add egg front sprite
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 20a2f81a2b0a9895f3210986584a5c1fd2083e3e[m
+Merge: eb496b2 aa74f18
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Wed May 30 16:16:13 2018 -0400
+
+    Merge branch 'master' of https://git.sanqui.net/pret/pokegold-spaceworld
+
+[33mcommit eb496b251168d4adbde6a6ff0a8019af5601b65d[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Wed May 30 16:15:58 2018 -0400
+
+    Dump trainer class names
+
+[33mcommit aa74f18b4c9b92da23870c73975ad70a7f8f7f37[m
+Author: dannye <33dannye@gmail.com>
+Date:   Wed May 30 15:09:41 2018 -0500
+
+    Add tileset headers and tileset graphics
+
+[33mcommit eeed857d5c858d218d2917a44704c6c27e735515[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Wed May 30 15:46:12 2018 -0400
+
+    Start all trainer party groups
+
+[33mcommit 58765f401b77cfcd58219d333cfeebb8e486275a[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Wed May 30 15:07:45 2018 -0400
+
+    More accurate comments
+
+[33mcommit a1550d4c160ffdadd91a3776135aeeeb0fb6a4b6[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Wed May 30 14:55:37 2018 -0400
+
+    'make mostlyclean' preserves graphics; separate frame gfx files
+
+[33mcommit aa11780082158395153c930403a90219383da681[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Wed May 30 20:34:06 2018 +0200
+
+    hram.asm: fix receive spelling error
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 3a45d7ce1286034c0af12f79348bfea9f49a2e13[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Wed May 30 12:23:53 2018 -0400
+
+    Split up icon graphics; add missing files
+
+[33mcommit 3c6e9ccabc31a60aaa0563009aaeb16ff5bacb03[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Wed May 30 12:00:34 2018 -0400
+
+    Organize graphics like pokecrystal
+
+[33mcommit 6ef9138b8a6c41c66c15e6b98a06f81002d22718[m
+Author: dannye <33dannye@gmail.com>
+Date:   Wed May 30 04:18:51 2018 -0500
+
+    Add more graphics
+    add tools/gfx.c for trimming whitespace from pngs
+
+[33mcommit 943a9c74e4bd2bd754d09a15f82b8338f1e8c3e7[m
+Author: dannye <33dannye@gmail.com>
+Date:   Tue May 29 23:16:54 2018 -0500
+
+    Add misc graphics
+    add exes to gitignore for those on windows
+
+[33mcommit 7b91435b45f4ef5bc3746e5b043b00e22276aa9f[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 21:06:50 2018 -0400
+
+    More trainer parties
+
+[33mcommit b9d4178dad95a396b3a7ca9e2bc5c4fc4b81630e[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 19:35:36 2018 -0400
+
+    Start decoding trainer parties
+
+[33mcommit 71cb56a73e53fd8cb30b2bbd944d866cb6717e48[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 19:15:57 2018 -0400
+
+    Same pic bank solution as pokecrystal
+
+[33mcommit c3bbf7585a562c21ac330d3f6bb643551ef35ae6[m
+Merge: 2f65c68 ad9c76a
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 19:06:36 2018 -0400
+
+    Merge branch 'master' of http://git.sanqui.net:3000/pret/pokegold-spaceworld
+
+[33mcommit 2f65c6855090496b1cb710af6da746a340ee7b47[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 19:06:23 2018 -0400
+
+    Small temporary SECTION headers go in main.asm, so the individual files won't all need fixing later
+
+[33mcommit ad9c76ad95e17224ed2beca8b30f25b21b4ccac5[m[33m ([m[1;33mtag: 20180530[m[33m)[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Wed May 30 00:55:49 2018 +0200
+
+    gfx: remove wrong annon pic
+    
+    My script happily dumped yadoking twice... :|
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit f43233bbffb066b0bf7344bf83760abd768bfa10[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Wed May 30 00:42:37 2018 +0200
+
+    gfx, main.asm: add Pokémon sprite bank table
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 5946e4a8891ee6dfa9836d817df99b53f380b22c[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 18:31:18 2018 -0400
+
+    Fix base stat syntax
+
+[33mcommit 4dae251976d69eed7ea81478ea87cec032e58410[m
+Merge: 22c1315 8ef0fc6
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 18:28:09 2018 -0400
+
+    Merge branch 'master' of http://git.sanqui.net:3000/pret/pokegold-spaceworld
+
+[33mcommit 22c1315dd51eb90be491b8a7f6a73c5d15127737[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 18:27:55 2018 -0400
+
+    Include base data (some Pokémon needed TM/HM flags beyond 57)
+
+[33mcommit 8ef0fc660d3be9378175efed2450d8c1d979e01e[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Wed May 30 00:01:36 2018 +0200
+
+    gfx, main.asm: add Pokémon front and back pics
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit aafbc819c741ffe0c1f86fd79b3db98bada452b7[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Tue May 29 23:50:33 2018 +0200
+
+    base_stats.asm: prepare pokered macros to measure length of an individual stat entry
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit ad308a631b944d952779d2bf867ede20835d148a[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Tue May 29 23:48:42 2018 +0200
+
+    Makefile: mark converted/compressed picture files precious
+    
+    This is so a) they don't get deleted and b) they don't produce a huge
+    rm line after the compare target ran.
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 678055519c30f0f051b3782c0cc29051af321efd[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Tue May 29 23:45:18 2018 +0200
+
+    Makefile: clean compressed pictures as well
+    
+    Signed-off-by: Tauwasser <Tauwasser@tauwasser.eu>
+
+[33mcommit 46961443013b8e0819169a4f3bfd4fedd0d7904a[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 18:15:41 2018 -0400
+
+    Include data in main.asm (not base data, it doesn't match yet)
+
+[33mcommit cd82d460b37ccab0bd0b5eea45cb87e162e94930[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 17:20:06 2018 -0400
+
+    Declare type chart
+
+[33mcommit 50e61769cb11ab17518b69335b68ecdc785c00f2[m
+Author: Rangi <remy.oukaour+rangi@gmail.com>
+Date:   Tue May 29 16:54:19 2018 -0400
+
+    pics -> pokemon (follow pokecrystal convention)
+
+[33mcommit 83b4ef26ac9877a4d767c22395f4ea57d8711190[m
+Author: ISSOtm <eldredhabert0@gmail.com>
+Date:   Tue May 29 22:33:26 2018 +0200
+
+    Add compression tool to .gitignore
+
+[33mcommit 0614ce8b8fbfccfbaf8cda89ed083417c12bcce1[m
+Author: ISSOtm <eldredhabert0@gmail.com>
+Date:   Tue May 29 22:32:27 2018 +0200
+
+    Fix incorrect function in farcall/callfar
+
+[33mcommit a1314a467195727c6cadca5b97f77b7c44ebf83e[m
+Author: Tauwasser <Tauwasser@tauwasser.eu>
+Date:   Tue May 29 22:25:28 2018 +0200
+
+    main.asm: remove unnecessary double include of charmap
+    
+  
